@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="http://shorturl.at/grsJL">
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p>Use this site to get your weather</p>
+
+        <form>
+            <input class="txt_address" type="text" placeholder="Address" >
+            <button class="btn_search">Search</button>
+        </form>
+        <div id="content_weather">
+            <p></p>
+            <p></p>
+            <p></p>
+            <img src="" alt="">
+        </div>
+    </div>
+    
+    {{>footer}}
+
+    <script src="/js/app.js"></script>
+</body>
+</html>
