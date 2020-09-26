@@ -5,7 +5,7 @@ const forecast = (latitude, logitude, callback) => {
     request({url, "json":true}, (error, response, body) => {
         if(error){ // this meant != null
             callback('Check Your Internet Connection Error...',undefined)
-        }else if(body.error){
+        }else if(body.error){ 
             callback('Please specify a valid location identifier using the query parameter.',undefined)
         }else{
             callback(undefined,{
